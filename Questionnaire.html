@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="shortcut icon"
+        href="https://www.flaticon.com/svg/vstatic/svg/1998/1998592.svg?token=exp=1612040719~hmac=df28c0c32ba9bbe86c4df30374c13a33"
+        type="image/svg">
+</head>
+
+<body>
+    <form>
+        <h1 style="color:rgb(36, 34, 178)"><b>Опрос для мам и пап котиков</b></h1>
+
+        <div style="color:rgb(80, 83, 255)">
+            <Label for="clichka">1.Кличка питомца</Label>
+            <input type="text" id="clichka" />
+        </div>
+        <div style="color:rgb(18, 128, 15)">
+            <fieldset>
+                <Label for="name">2.1.Имя владельца</Label>
+                <input type="text" id="name" /> <br>
+                <Label for="contacts">2.2.Контакты владельца</Label>
+                <input type="text" id="contacts" />
+            </fieldset>
+        </div>
+        <div style="color:rgb(216, 31, 139)">
+            <Label for="name">3.Порода питомца</Label> <br>
+            <select>
+                <option value="1">Выберите из списка</option>
+                <option value="2">Сиамская</option>
+                <option value="3">Сфинкс</option>
+                <option value="4">Шотландская вислоухая</option>
+                <option value="5">Метис</option>
+                <option value="5">Другое</option>
+            </select>
+        </div>
+        <div style="color:rgb(235, 95, 14)">
+            <p><b>4.Чем питается</b></p> <br />
+            Сухой корм <input type="checkbox" /><br />
+            Влажный корм <input type="checkbox" /><br />
+            Натуральный корм <input type="checkbox" /><br />
+        </div>
+        <div style="color:rgb(167, 138, 9)">
+            <p>5.Пол питомца</p> <br />
+            Самочка <input type="radio" name="sex" />
+            Самец <input type="radio" name="sex" />
+        </div>
+        <p>6.Комментарий владельца</p>
+        <div><textarea rows="15"> </textarea></div>
+        <div style="color:rgb(56, 170, 91)">7.Фото питомца</div>
+        <div>
+            <input type="file" id="input" multiple>
+        </div>
+        <div><button style="color:rgb(138, 56, 170)">Сохранить</button></div>
+        <div> <label><input type="checkbox">я даю согласие на обработку персональных данных</label></div>
+
+    </form>
+</body>
+
+</html>
