@@ -5,30 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XBOX</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
 
-    <header style="background-color: #373A3C; border-radius: 4px;">
+    <header>
+
+        <img src="assets/pics/Group.png" alt="Логотип" id="logo">
+        <nav class="navbar">
+            <a class="link-games" href="/GAMES">GAMES </a>
+            <a class="link" href="/Consoles">Consoles</a>
+            <a class="link" href="/Community">Community</a>
+        </nav>
         <form>
-            <img src="assets/pics/Group.png" alt="Логотип" style="width: 96px;height: 29px;">
-            <nav style="color: #FFFFFF">
-                <a href="/GAMES" style="color: #FFFFFF;">GAMES </a> | <a href="/Consoles"
-                    style="color: rgba(255, 255, 255,0.5);">Consoles</a> | <a href="/Community"
-                    style="color:rgba(255, 255, 255,0.5) ;">Community</a> |
-            </nav>
-            <input type="search" name="text" required placeholder="Search" style="color:#435766;">
-            <img src="assets/pics/Shape.png" alt="My box" style="width: 20px;height: 20px;">
-            <a href="/MyBOX" style="color: rgba(255, 255, 255,0.5);">MyBOX</a>
+            <input type="search" name="s" required placeholder="Search">
+
         </form>
+        <div id="mybox">
+            <img class="mybox" src="assets/pics/Shape.png" alt="My box">
+            <a href="/MyBOX" style="color: rgba(255, 255, 255,0.5);">MyBOX</a>
+        </div>
     </header>
     <main>
-        <div
-            style="background-image: url(assets/pics/Star-Wars-Battlefront-II-combat.jpg); height: 788px;width: 1401px;">
+        <div style="background-image: url(assets/pics/Star-Wars-Battlefront-II-combat.jpg);" id="backgroundstar">
         </div>
+        <h1 id="chapter1"> Star Wars</h1>
+        <h2 id="chapter2">Battlefront II</h2>
+
+        <form action="page/new.html" target="_blank" id="b1">
+            <button class="watch">Watch trailer</button>
+        </form>
 
     </main>
-
 </body>
 
 </html>
