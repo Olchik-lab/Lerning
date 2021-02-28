@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridEx1</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <style>
+        .header {
+            background: turquoise;
+            grid-column: 1/5;
+            grid-row: 1/2;
+            text-align: center;
+        }
+
+        .sidebar {
+            background: wheat;
+            grid-column: 4/5;
+            grid-row: 2/5;
+            text-align: center
+        }
+
+        .main {
+            background: rgb(184, 252, 82);
+            grid-column: 1/4;
+            grid-row: 2/3;
+            text-align: center
+        }
+
+        .item1 {
+            background: yellowgreen;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            text-align: center
+        }
+
+        .item2 {
+            background: rgb(169, 245, 17);
+            grid-column: 2/4;
+            grid-row: 3/4;
+            text-align: center
+        }
+
+        .item3 {
+            background: rgb(96, 138, 12);
+            grid-column: 1/4;
+            grid-row: 4/5;
+            text-align: center
+        }
+
+
+        .footer {
+            background: lightskyblue;
+            grid-column: 1/5;
+            grid-row: 5/6;
+            display: grid;
+        }
+
+
+        .section1 {
+            background: whitesmoke;
+            height: 40px;
+            grid-row: 5/6;
+            grid-column: 1/2;
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .section2 {
+            background: whitesmoke;
+            height: 40px;
+            grid-row: 5/6;
+            grid-column: 2/3;
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .section3 {
+            background: whitesmoke;
+            height: 40px;
+            grid-row: 5/6;
+            grid-column: 3/4;
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .section4 {
+            background: whitesmoke;
+            height: 40px;
+            grid-row: 5/6;
+            grid-column: 4/5;
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .conteiner {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 10% 1fr 1fr 1fr 10%;
+            grid-gap: 5px;
+            height: 98vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conteiner">
+        <header class="header">[Шапка страницы]</header>
+        <aside class="sidebar">[Боковая область]</aside>
+        <main class="main">[Основная часть]</main>
+        <div class="item1">[One more1]</div>
+        <div class="item2">[One more2]</div>
+        <div class="item3">[One more3]</div>
+
+        <footer class="footer">
+            <div class="section1">Секция 1</div>
+            <div class="section2">Секция 2</div>
+            <div class="section3">Секция 3</div>
+            <div class="section4">Секция 4</div>
+        </footer>
+    </div>
+</body>
