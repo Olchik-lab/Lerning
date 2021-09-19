@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background</title>
+</head>
+
+<body>
+    <div>
+        <label for="theme">Выберите тему</label>
+        <select name="theme" id="theme" onchange="back()">
+            <option value="nothing" selected>Выберите тему из списка</option>
+            <option value="night">Тема - ночная прохлада</option>
+            <option value="perl">Тема - жемчужина</option>
+            <option value="sky">Тема - небо</option>
+        </select>
+    </div>
+    <h1>Это мой веб-сайт</h1>
+
+
+
+
+    <script>
+        function back() {
+            switch (document.getElementById("theme").value) {
+                case "night":
+                    document.body.style.background =
+                        "#95918C";
+                    break;
+                case "perl":
+                    document.body.style.backgroundColor = "#EAE6CA";
+                    break;
+                case "sky":
+                    document.body.style.backgroundColor = "#7FC7FF";
+                    break;
+                case "nothing":
+                    document.body.style.background = "#ffff";
+            }
+        }
+    </script>
+</body>
+
+</html>
